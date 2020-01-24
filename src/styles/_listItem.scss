@@ -1,0 +1,46 @@
+.list-item {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  .list-name {
+    margin-right: 20px;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  .list-ext {
+    width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  .list-delete-icon {
+    cursor: pointer;
+    position: relative;
+    width: 20px;
+    .close {
+      top: 5px;
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: rgb(88, 10, 10);
+      transform: rotate(45deg);
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 20px;
+        height: 2px;
+        background-color: rgb(88, 10, 10);
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

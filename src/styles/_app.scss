@@ -1,0 +1,33 @@
+.app {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .table-list {
+    width: 500px;
+    margin-bottom: 50px;
+    .table-legend {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 10px;
+      border-bottom: 2px solid rgb(184, 183, 183);
+      .table-name {
+        margin-right: 20px;
+        width: 300px;
+      }
+      .table-ext {
+        width: 80px;
+      }
+    }
+  }
+  .list-reset {
+    padding: 0;
+  }
+  .buttons-wrapper {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
