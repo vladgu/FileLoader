@@ -38,24 +38,18 @@ const App = () => {
   }
 
   const submit = () => {
-    var formData = new FormData();
+    if (filesArr && filesArr.length) {
+      const formData = new FormData();
 
-    formData.append('file', filesArr);
+      formData.append('file', filesArr);
 
-    var request = new XMLHttpRequest();
-    request.open('POST', '../../public/uploads/');
-    request.send(formData);
-
-    // if (filesArr && filesArr.length) {
-    //   const form = new FormData()
-    //   form.append('fill', 1)
-    //   console.log(filesArr)
-    // } else {
-    //   alert('Choose files to upload first!')
-    // }
+      // const request = new XMLHttpRequest();
+      // request.open('POST', '');
+      // request.send(formData);
+    } else {
+      alert('Choose files to upload first!')
+    }
   }
-
-  console.log(filesArr)
 
   return (
     <div className='app'>
